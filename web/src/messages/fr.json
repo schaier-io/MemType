@@ -1,0 +1,15 @@
+{
+    "title": "Jeu de Mémoire et de Frappe",
+    "score": "Score",
+    "placeholder": "Tapez le texte que vous avez vu...",
+    "submit": "Soumettre",
+    "startGame": "Commencer",
+    "newText": "Nouveau Texte",
+    "instructions": "Mémorisez le texte et tapez-le correctement pour marquer des points !",
+    "difficulty": "Difficulté",
+    "useCapitals": "Utiliser les majuscules",
+    "highScore": "Meilleur score",
+    "settings": "Paramètres du jeu",
+    "hideEarly": "Masquer le texte",
+    "userInputRequired": "Veuillez entrer du texte"
+}

@@ -1,0 +1,15 @@
+{
+    "title": "Juego de Memoria y Escritura",
+    "score": "Puntuación",
+    "placeholder": "Escribe el texto que viste...",
+    "submit": "Enviar",
+    "startGame": "Comenzar Juego",
+    "newText": "Nuevo Texto",
+    "instructions": "¡Recuerda el texto y escríbelo correctamente para ganar puntos!",
+    "difficulty": "Dificultad",
+    "useCapitals": "Usar mayúsculas",
+    "highScore": "Puntuación máxima",
+    "settings": "Ajustes del juego",
+    "hideEarly": "Ocultar texto",
+    "userInputRequired": "Por favor, escribe algún texto"
+}

@@ -1,0 +1,15 @@
+{
+    "title": "Gedächtnis-Schreibspiel",
+    "score": "Punktzahl",
+    "placeholder": "Geben Sie den gesehenen Text ein...",
+    "submit": "Bestätigen",
+    "startGame": "Spiel starten",
+    "newText": "Neuer Text",
+    "instructions": "Merken Sie sich den Text und geben Sie ihn korrekt ein, um Punkte zu sammeln!",
+    "difficulty": "Schwierigkeit",
+    "useCapitals": "Großbuchstaben verwenden",
+    "highScore": "Höchstpunktzahl",
+    "settings": "Spieleinstellungen",
+    "hideEarly": "Text ausblenden",
+    "userInputRequired": "Bitte geben Sie einen Text ein"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Memory Typing Game",
+  "score": "Score",
+  "placeholder": "Type the text you saw...",
+  "submit": "Submit",
+  "startGame": "Start Game",
+  "newText": "New Text",
+  "instructions": "Remember the text and type it correctly to score points!",
+  "difficulty": "Difficulty",
+  "useCapitals": "Use Capital Letters",
+  "highScore": "High Score",
+  "settings": "Game Settings",
+  "hideEarly": "Hide text",
+  "userInputRequired": "Please enter some text"
+}
