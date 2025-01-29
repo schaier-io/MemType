@@ -171,7 +171,7 @@ export default function Home() {
 
           <div className="space-y-2">
             <div className="flex flex-col gap-1">
-              {userInputRequired && userInput.length == 0 && !isTextVisible && <p className="text-red-500 text-sm ml-0.5">{t('userInputRequired')}</p>}
+              {userInputRequired && userInput.length == 0 && <p className="text-red-500 text-sm ml-0.5">{t('userInputRequired')}</p>}
               <Input
                 ref={inputRef}
                 type="text"
