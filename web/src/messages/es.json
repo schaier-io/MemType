@@ -12,6 +12,18 @@
     "settings": "Ajustes del juego",
     "hideEarly": "Ocultar texto",
     "userInputRequired": "Por favor, escribe algún texto",
+    "onlySmall": "Solo letras minúsculas",
+    "onlyCapital": "Primera letra en mayúscula",
+    "mixedCase": "Mayúsculas y minúsculas",
+    "allCapital": "Solo letras mayúsculas",
+    "characters": "caracteres",
+    "speed": "Velocidad",
+    "verySlow": "Muy lento",
+    "slow": "Lento",
+    "medium": "Medio",
+    "fast": "Rápido",
+    "extreme": "Extremo",
+    "allowSpecial": "Permitir caracteres especiales",
     "metadata": {
         "description": "Entrena tu memoria y habilidades de mecanografía con MemType - un juego divertido y desafiante"
     }

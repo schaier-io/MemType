@@ -12,6 +12,18 @@
   "settings": "Game Settings",
   "hideEarly": "Hide text",
   "userInputRequired": "Please enter some text",
+  "onlySmall": "Only small letters",
+  "onlyCapital": "First capital letter",
+  "mixedCase": "Mixed case",
+  "allCapital": "Only capital letters",
+  "characters": "characters",
+  "speed": "Speed",
+  "verySlow": "Very slow",
+  "slow": "Slow",
+  "medium": "Medium",
+  "fast": "Fast",
+  "extreme": "Extreme",
+  "allowSpecial": "Allow special characters",
   "metadata": {
     "description": "Train your memory and typing skills with MemType - a fun and challenging memory typing game"
   }

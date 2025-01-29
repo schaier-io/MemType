@@ -12,6 +12,18 @@
     "settings": "Spieleinstellungen",
     "hideEarly": "Text ausblenden",
     "userInputRequired": "Bitte geben Sie einen Text ein",
+    "onlySmall": "Nur Kleinbuchstaben",
+    "onlyCapital": "Ein Großbuchstaben",
+    "mixedCase": "Gemischte Groß- und Kleinbuchstaben",
+    "allCapital": "Nur Großbuchstaben",
+    "characters": "Zeichen",
+    "speed": "Geschwindigkeit",
+    "verySlow": "Sehr langsam",
+    "slow": "Langsam",
+    "medium": "Mittel",
+    "fast": "Schnell",
+    "extreme": "Extrem schnell",
+    "allowSpecial": "Sonderzeichen erlauben",
     "metadata": {
         "description": "Trainiere dein Gedächtnis und deine Tippfähigkeiten mit MemType - ein spaßiges und herausforderndes Spiel"
     }

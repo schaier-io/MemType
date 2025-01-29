@@ -12,6 +12,18 @@
     "settings": "Paramètres du jeu",
     "hideEarly": "Masquer le texte",
     "userInputRequired": "Veuillez entrer du texte",
+    "onlySmall": "Seulement les minuscules",
+    "onlyCapital": "Première lettre en majuscule",
+    "mixedCase": "Majuscules et minuscules",
+    "allCapital": "Seulement les majuscules",
+    "characters": "caractères",
+    "speed": "Vitesse",
+    "verySlow": "Très lent",
+    "slow": "Lent",
+    "medium": "Moyen",
+    "fast": "Rapide",
+    "extreme": "Extrêmement rapide",
+    "allowSpecial": "Autoriser les caractères spéciaux",
     "metadata": {
         "description": "Entraînez votre mémoire et vos compétences en dactylographie avec MemType - un jeu amusant et stimulant"
     }
