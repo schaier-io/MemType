@@ -111,7 +111,7 @@ export default function Home() {
     setUserInputRequired(false)
 
     // Hide the text after the time calculated
-    const hideDelay = Math.max(500, 1000 + difficulty * 1000 - difficulty * difficulty * difficulty * 15)
+    const hideDelay = Math.max(800, 200 + difficulty * 1000 + difficulty * difficulty * 30 - difficulty * difficulty * difficulty * 15)
 
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current)
