@@ -17,7 +17,7 @@ import {
 import { Trash } from "lucide-react"
 import { Enum, InferValue } from "better-enums"
 
-export const characterSets = {
+const characterSets = {
   en: {
     capitalConsonants: 'BCDFGHJKLMNPQRSTVWXYZ',
     capitalSpecial: '',
