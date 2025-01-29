@@ -11,5 +11,8 @@
     "highScore": "Meilleur score",
     "settings": "Paramètres du jeu",
     "hideEarly": "Masquer le texte",
-    "userInputRequired": "Veuillez entrer du texte"
+    "userInputRequired": "Veuillez entrer du texte",
+    "metadata": {
+        "description": "Entraînez votre mémoire et vos compétences en dactylographie avec MemType - un jeu amusant et stimulant"
+    }
 }

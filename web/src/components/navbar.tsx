@@ -12,6 +12,8 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
+import { Logo } from "./logo"
+import Link from "next/link"
 
 import { GB, DE, ES, FR } from 'country-flag-icons/react/3x2'
 
@@ -36,10 +38,16 @@ export function Navbar() {
     }
 
     return (
-        <nav className="border-b">
-            <div className="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center">
-                <div />
-                <div className="flex items-center gap-4">
+        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+            <div className=" px-5 w-full flex h-14 items-center justify-between">
+                <Link href="/" className="flex items-center space-x-2 ml-5">
+
+                    <Logo className="w-8 h-8" />
+                    <span className="font-bold">MemType</span>
+
+                </Link>
+
+                <div className="flex items-center justify-end gap-4">
                     <Select
                         defaultValue={currentLocale}
                         onValueChange={handleLanguageChange}
@@ -77,6 +85,6 @@ export function Navbar() {
                     </Button>
                 </div>
             </div>
-        </nav>
+        </header>
     )
 } 

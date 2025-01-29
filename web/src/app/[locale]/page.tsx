@@ -109,7 +109,6 @@ export default function Home() {
     setIsTextVisible(true)
     setGameStarted(true)
     setUserInputRequired(false)
-    console.log("started")
 
     // Hide the text after the time calculated
     const hideDelay = Math.max(500, 1000 + difficulty * 1000 - difficulty * difficulty * difficulty * 15)
@@ -118,7 +117,7 @@ export default function Home() {
       clearTimeout(timeoutRef.current)
     }
     setTimeout(() => {
-      buttonRef.current?.focus()
+      inputRef.current?.focus()
     }, 0)
     timeoutRef.current = setTimeout(() => {
       setIsTextVisible(false)
@@ -140,6 +139,9 @@ export default function Home() {
       return
     }
     setUserInputRequired(false)
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current)
+    }
     if (userInput === displayText) {
       setScore(score + 1)
     } else {
@@ -147,13 +149,7 @@ export default function Home() {
     }
     startNewRound()
   }
-  const hideEarly = () => {
-    console.log("hidden")
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current)
-    }
-    setIsTextVisible(false)
-  }
+
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
@@ -181,8 +177,11 @@ export default function Home() {
                 type="text"
                 placeholder={t('placeholder')}
                 value={userInput}
-                disabled={!gameStarted || isTextVisible}
-                onChange={(e) => setUserInput(e.target.value)}
+                disabled={!gameStarted}
+                onChange={(e) => {
+                  setIsTextVisible(false)
+                  setUserInput(e.target.value)
+                }}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') {
                     handleSubmit()
@@ -194,11 +193,11 @@ export default function Home() {
             <div className="flex gap-2">
               <Button
                 className="w-full"
-                onClick={!isTextVisible ? handleSubmit : hideEarly}
+                onClick={handleSubmit}
                 disabled={!gameStarted}
                 ref={buttonRef}
               >
-                {!isTextVisible ? t('submit') : t('hideEarly')}
+                {t('submit')}
               </Button>
 
               <Button

@@ -11,5 +11,8 @@
   "highScore": "High Score",
   "settings": "Game Settings",
   "hideEarly": "Hide text",
-  "userInputRequired": "Please enter some text"
+  "userInputRequired": "Please enter some text",
+  "metadata": {
+    "description": "Train your memory and typing skills with MemType - a fun and challenging memory typing game"
+  }
 }

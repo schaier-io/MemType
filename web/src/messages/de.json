@@ -11,5 +11,8 @@
     "highScore": "Höchstpunktzahl",
     "settings": "Spieleinstellungen",
     "hideEarly": "Text ausblenden",
-    "userInputRequired": "Bitte geben Sie einen Text ein"
+    "userInputRequired": "Bitte geben Sie einen Text ein",
+    "metadata": {
+        "description": "Trainiere dein Gedächtnis und deine Tippfähigkeiten mit MemType - ein spaßiges und herausforderndes Spiel"
+    }
 }

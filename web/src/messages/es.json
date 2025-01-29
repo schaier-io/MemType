@@ -11,5 +11,8 @@
     "highScore": "Puntuación máxima",
     "settings": "Ajustes del juego",
     "hideEarly": "Ocultar texto",
-    "userInputRequired": "Por favor, escribe algún texto"
+    "userInputRequired": "Por favor, escribe algún texto",
+    "metadata": {
+        "description": "Entrena tu memoria y habilidades de mecanografía con MemType - un juego divertido y desafiante"
+    }
 }

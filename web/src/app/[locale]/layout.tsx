@@ -7,6 +7,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { getMessages } from 'next-intl/server';
+import { Metadata } from 'next';
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -22,21 +23,61 @@ export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
 }
 
+// Metadata generator function
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const paramsResolved = await params;
+    const messages = (await getMessages({ locale: paramsResolved.locale })) as any
 
-export default async function LocaleLayout({ children, params }: { children: React.ReactNode, params: any }) {
-    console.log(params)
+    return {
+        title: {
+            template: '%s | MemType',
+            default: 'MemType - Memory Typing Game',
+        },
+        description: messages.metadata?.description || 'Train your memory and typing skills with MemType - a fun and challenging memory typing game',
+        keywords: ['memory game', 'typing game', 'brain training', 'educational game', 'typing practice'],
+        authors: [{ name: 'MemType' }],
+        openGraph: {
+            title: 'MemType - Memory Typing Game',
+            description: messages.metadata?.description || 'Train your memory and typing skills with MemType',
+            type: 'website',
+            locale: paramsResolved.locale,
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: 'MemType - Memory Typing Game',
+            description: messages.metadata?.description || 'Train your memory and typing skills with MemType',
+        },
+        icons: {
+            icon: '/favicon.ico',
+            apple: '/apple-touch-icon.png',
+        },
+        manifest: '/site.webmanifest',
+        // Add viewport settings
+        viewport: {
+            width: 'device-width',
+            initialScale: 1,
+            maximumScale: 1,
+        },
+    };
+}
+
+export default async function LocaleLayout({ children, params }: { children: React.ReactNode, params: Promise<{ locale: string }> }) {
+
+    const paramsResolved = await params;
     // Ensure that the incoming `locale` is valid
-    if (!routing.locales.includes(params.locale as any)) {
+    if (!routing.locales.includes(paramsResolved.locale as any)) {
         notFound();
     }
 
     // Enable static rendering
-    setRequestLocale(params.locale);
+    setRequestLocale(paramsResolved.locale);
 
-    const messages = await getMessages(params.locale);
+    const messages = await getMessages({ locale: paramsResolved.locale });
+
 
     return (
-        <html lang={params.locale} suppressHydrationWarning>
+        <html lang={paramsResolved.locale} suppressHydrationWarning>
+
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <ThemeProvider
                     attribute="class"
@@ -44,7 +85,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <NextIntlClientProvider messages={messages} locale={params.locale}>
+                    <NextIntlClientProvider messages={messages} locale={paramsResolved.locale}>
                         <Navbar />
                         {children}
                     </NextIntlClientProvider>
