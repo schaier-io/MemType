@@ -2,11 +2,11 @@
 
 Try it [now](https://read-fast-murex.vercel.app)
 
-MemType is an educational game designed to help children improve their reading speed, memory, and typing skills. The game displays text for a brief moment, challenging players to remember and type it correctly, making learning fun and engaging.
+MemType is an educational game designed to help children improve their reading speed, memory, and typing skills. The game displays text, importantly not any known words, for a brief moment, challenging players to remember and type it correctly, making learning fun and engaging.
 
 ## Educational Benefits
 
-- 📚 Improves reading speed and comprehension
+- 📚 Improves reading speed and comprehension of letters
 - 🧠 Enhances working memory and focus
 - ⌨️ Develops typing skills naturally
 - 👀 Trains visual memory and attention span
@@ -15,19 +15,17 @@ MemType is an educational game designed to help children improve their reading s
 
 ## Features
 
-- 🌍 Multilingual support (English, German, Spanish, French)
-- 🎮 Adjustable difficulty for different age groups
+- 🌍 Multilingual support with special characters (English, German, Spanish, French)
+- 🎮 Adjustable difficulty for different age groups and challenge levels
 - ⚡ Multiple speed levels for progressive learning
-- 🔤 Various text modes to match reading level
 - 🎨 Eye-friendly dark/light theme
 - 💾 Progress tracking to motivate improvement
-- ⌨️ Special character support for language learning
 
 ## Perfect for
 
 - Children learning to read
 - Students developing typing skills
-- Language learners
+- Language learners to familiarize themselves with special characters
 - Anyone wanting to improve reading speed
 - Teachers and educational institutions
 

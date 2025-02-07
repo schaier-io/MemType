@@ -21,18 +21,24 @@ The project uses [shadcn/ui](https://ui.shadcn.com/) components with custom styl
 - Accordions
 - Labels
 
-## Theme
-
-- **Colors**: Uses system theme (dark/light) with accent colors
-- **Typography**: Geist Sans and Geist Mono fonts
-- **Spacing**: Consistent spacing scale
-- **Animations**: Subtle transitions for interactive elements
-
-## Assets
+Further components:
 
 - Icons from Lucide React
 - Country flags for language selection
-- Custom logo component
+
+These components can be found in the [web/src/components](../web/src/components) directory.
+
+## Theme
+
+- **Colors**: Uses system theme (dark/light) with accent colors
+- **Typography**: Geist Sans and Geist Mono fonts as default
+- **Spacing**: Consistent spacing scale
+- **Animations**: Subtle transitions for interactive elements
+- **Gamification**: Make it fun to play, while still challenging the student
+
+## Assets
+
+- Custom logo files (Affinity Designer)
 
 ## Usage
 
